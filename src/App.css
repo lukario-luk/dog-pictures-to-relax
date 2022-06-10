@@ -2,6 +2,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 body{
   background-color: brown;
 }
@@ -11,23 +12,61 @@ body{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  
 }
 #dog-img{
-  height: 80vh;
+  height: 70vh;
 }
 button{
-  min-width: 20vw;
-  font-size: max(0.6em,5vh);
+  width: 30vw;
+  font-size:5vh;
+  padding: 4%;
 }
-@media screen and (max-width: 135vh) {
+figure{
+  background-color: tomato;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 150vh) {
   body {
     background-color: lightblue;
   }
   #container-btn-dog{
-    flex-direction: column;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    
+    height: 100vh;
+  }
+  figure{
+    width: 100%;
+    margin: 6vh 2vw 0;
   }
   #dog-img{
-    width: 85vw;
+    max-width: 99%;
+    height: 55vw;
+  }
+  button{
+    min-width: 25vh;
+    margin: 0 0 2.2vw;
+    font-size:3vh;
+  }
+}
+@media screen and (min-height:175vw){
+  body {
+    background-color: rgb(0, 0, 0);
+  }
+  figure{
+    width: 98%;
+    margin: 0;
+  }
+  #dog-img{
+    width: 100%;
     height: auto;
+    margin: 1%;
+  }
+  button{
+    min-width: 20vh;
+    margin: 0 0 2.2vw;
+    font-size:2.3vh;
   }
 }
