@@ -4,7 +4,7 @@ import "./App.css"
 export default function DogButton () {
 
 const [dog, setDog] = useState([])
-const [DisplayImage, setDisplayImage] = useState(false)
+const [DisplayImage,  setDisplayImage] = useState(false)
 
 const dogList = ()=>{
     try{
